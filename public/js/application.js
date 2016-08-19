@@ -6,7 +6,17 @@ $(document).ready(function() {
     var input = $this.find('#movie-input-field').val();
     input = input.replace(/\s/g, "%20");
     $.getJSON( api + input + '/exact', function(data){
-      jsonObj = data;
+      var jsonObj = data.results[0].source[0];
+      // $.ajax({
+      //   url: '/games',
+      //   method: 'POST',
+      //   data: {data: jsonObj}
+      // }).done(function(response){
+      //   console.log(response);
+      //   // $('#list').append(response);
+      // });
+      var li = '<li>'+jsonObj+'</li>'
+      $('#list').append(li);
     });
   });
 });
