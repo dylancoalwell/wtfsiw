@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5 {
   margin: 10px;
 }
 
+p {
+  margin: 10px;
+}
+
 .container {
   padding: 1px;
   margin: 10px;
@@ -74,10 +78,12 @@ label {
     clear:left;
     text-align:left;
     padding-right:10px;
+    margin-left: 10px;
 }
 
 input {
   width: 400px;
+  margin-bottom: 10px;
 }
 
 input, label {
@@ -87,6 +93,7 @@ input, label {
 .home {
   display: inline;
   float: right;
+  margin-right: 10px;
 }
 
 .error {
@@ -97,4 +104,10 @@ input, label {
 form {
   margin-right: 6px;
   display: block;
+}
+
+.submit-form {
+  display: block;
+  overflow: auto;
+  text-align: center;
 }
